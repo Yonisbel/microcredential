@@ -1,0 +1,110 @@
+*{box-sizing: border-box;}
+
+.title{  
+    box-shadow: 7px 7px 7px black;
+    border: ridge 3px black;
+    background-color: orange;
+    margin-top: 1.5em;
+    text-align: center;
+    }
+.container{
+    position: relative;
+    height: 500px;
+    text-align: center;
+}
+.motor{
+    border-radius: 20%;
+    height: 100%;
+    border:ridge 10px black;
+    position: relative;
+    filter: invert(20%);
+    box-shadow: 7px 7px 7px black;
+   
+}
+.motoinfo{
+    width: 500px;
+    bottom: 120px;
+    position: relative;
+    left: 16px;
+    background-color: bisque;
+    border: ridge 3px green;
+    padding-left: 1em;
+    font-size: 15px;
+    color: brown;
+    margin: auto;
+    opacity: .5;
+}
+.container1{
+    position: relative;
+    height: 500px;
+    text-align: center;}
+
+.sky{
+     height: 100%;
+    border:ridge 10px black;
+    position: relative;
+    filter: blur(3px);
+}
+.skyinfo{
+    width: 500px;
+    bottom: 250px;
+    position: relative;
+    left: 16px;
+    padding: 1em;
+    margin: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: orchid;
+    font-size: 25px;
+    opacity: .3;
+   color: red;
+   box-shadow: 5px 5px 3px;
+}
+.container2{
+    position: relative;
+    height: 500px;
+    text-align: center;}
+
+.snow{
+    border-radius: 5%;
+     height: 100%;
+    border:ridge 10px navajowhite;
+    position: relative;
+    filter: sepia(60%)
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;}
+
+.bottom{width: 500px;
+    position: relative;
+    bottom: 100px;
+    left: -100px;
+    font-style: italic;
+    background-color: silver;
+    opacity: .6;
+    margin: auto;}
+
+.topl{
+    position: relative;
+    bottom: 550px;
+    right: 160px;
+    color: red;
+    margin: auto;}
+
+.right{
+    position: relative;
+    bottom: 500px;
+    width: 200px;
+    right: -250px;
+    border: solid 5px rgb(135, 206, 250 ) ;
+    box-shadow: 3px 3px 5px;
+    margin: auto;
+    background-color: rgb(240, 255, 255, .3);
+    opacity: 1;
+    border-radius: 5%;
+
+}
