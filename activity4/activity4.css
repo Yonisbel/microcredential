@@ -1,0 +1,102 @@
+*{box-sizing: border-box;}
+.animation{
+    width: 80%;
+    position: relative;
+    margin: auto;
+    border: solid 2px black;
+}
+.beach{
+    width: 100%;
+    display: block;
+    animation: invertImg 3s forwards;
+    animation-delay: 6s;
+}
+.camera{
+    width: 10%;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 30%;
+    animation: zoomCamera 5s forwards;
+}
+.cheese{
+    width: 30%;
+    top: 12%;
+    left: 16%;
+    display: block;
+    position: absolute;
+    animation: zoomCheese 3s forwards ease-in;
+}
+.heart1{ 
+    opacity: 0;
+    left: 16%;
+    bottom: 20%;
+    position: absolute;
+    display: block;
+    animation: opacityHeart 4s;
+    animation-delay: 10s;
+    
+}
+.heart2{
+    opacity: 0;
+    right: 16%;
+    bottom: 20%;
+    position: absolute;
+    display: block;
+    animation: opacityHeart 4s alternate-reverse;
+    animation-delay: 10s;
+}
+.heart3{
+    opacity: 0;
+    right: 16%;
+    top: 20%;
+    position: absolute;
+    display: block;
+    animation: opacityHeart 4s;
+    animation-delay: 10s;
+}
+.heart4{
+    opacity: 0;
+    left: 16%;
+    top: 16%;
+    position: absolute;
+    display: block;
+    animation: opacityHeart 4s alternate-reverse;
+    animation-delay: 10s;
+}
+
+@keyframes zoomCamera{
+    0%{transform: scale(0);}
+    10%{transform: scale(1.2);}
+    98%{transform: scale(1.2);}
+    100%{transform: scale(0);}
+}
+
+@keyframes zoomCheese{
+    0%{transform: scale(0);}
+    10%{transform: scale(1.5); filter: sepia(100%);}
+    40%{filter: sepia(100%)}
+    60%{filter: sepia(100%)}
+    80%{transform: scale(1.5);}
+    100%{transform: scale(0);}
+}
+@keyframes invertImg{
+    0%{filter: invert(100%)}
+    10%{filter: invert(0%);}
+    30%{filter: invert(100%);}
+    50%{filter: invert(0%);}
+    70%{filter: invert(100%);}
+    100%{filter: invert(0%);}
+}
+@keyframes opacityHeart{
+0%{opacity:1}
+10%{opacity:0}
+20%{opacity:1}
+30%{opacity:0}
+40%{opacity:1}
+50%{opacity:0}
+60%{opacity:1}
+70%{opacity:0}
+100%{opacity:1}
+
+}
